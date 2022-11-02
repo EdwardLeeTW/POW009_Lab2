@@ -130,8 +130,8 @@ void PWM_Initialize (void)
     PG4LEBH = 0x00;
     // PHASE 0; 
     PG4PHASE = 0x00;
-    // DC 6400; 
-    PG4DC = 0x1900;
+    // DC 0; 
+    PG4DC = 0x00;
     // DCA 0; 
     PG4DCA = 0x00;
     // PER 15992; 
