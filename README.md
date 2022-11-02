@@ -1,5 +1,5 @@
-# POW009_Lab1
- The hand-on example code for RTC POW009-Lab1
+# POW009_Lab2
+ The hand-on example code for RTC POW009-Lab2
 
 - - -
 ## Hardward EVM Boards Used:
@@ -15,17 +15,12 @@ Part Number: APP-POWERRTC1
 
 ## Summary
 
-The hand-on example code for RTC POW009-Lab1 was integrated the dsPIC33CK Framework for SMPS Application.
-- Controller: dsPIC33CK256MP508@100MIPS
-- I/O: 0.5Hz LED Toggle with LED1 (RE6)
-- PWMs: PWM4H & PWM4L
-  - PWM Frequency: 250KHz
-  - PWM4H on RC14
-  - PWM4L  on RD6
-  - Duty Cycle: Fixed at 40%
-  - Deadtime: Rising Edge: 150ns / Falling Edge: 150ns
-- Vout Feedback: AN22
-  - Triggered by PWM4_Trigger1
+The hand-on example code for RTC POW009-Lab2 is used to measure plant bode plot with Kp (P-term) contorl.
+- Codebase: POW009-Lab1 v1.0
+- Kp (P-term) contorl using PowerSmart-DCLD
+
+## Version Description
+- v1.0 (Nov 2, 2022)
 
 - - -
 
