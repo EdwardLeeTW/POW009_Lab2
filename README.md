@@ -45,6 +45,7 @@ Alternative Controller Plug-In Module:
 - [MPLAB Code Configurator (MCC) v5.1.17](https://www.microchip.com/mcc)
     - MPLAB Code Configurator (MCC) - Core v5.4.11
     - MPLAB Code Configurator (MCC) - Device Libraries dsPIC33 v1.171.1
+- [MPLAB® PowerSmart™ Development Suite v1.0.0.633](https://www.microchip.com/en-us/solutions/power-management-and-conversion/intelligent-power/mplab-powersmart-development-suite)
 
 ## Hardware Used
 
