@@ -47,12 +47,15 @@
 */
 #include "mcc_generated_files/system.h"
 #include "sources/os/os.h"
-
+#include "SyncBuckControl.h"
 /*
                          Main application
  */
 int main(void)
 {
+    // initialize VCOMP controller
+    VCOMP_ControlObject_Initialize();
+    
     // initialize the device
     SYSTEM_Initialize();
     
