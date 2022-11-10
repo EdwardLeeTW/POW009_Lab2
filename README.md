@@ -10,7 +10,7 @@ Part Number: DM330030
 ## Microchip APP-POWERRTC1 EVM
 Part Number: APP-POWERRTC1
 
-![image](https://a.rimg.com.tw/s1/6/a1/07/22025696299271_191.jpg) 
+![image](https://user-images.githubusercontent.com/61537309/200979780-344b1282-f81b-4b78-8f60-89ab7975ca87.png)
 - - -
 
 ## Summary
@@ -22,6 +22,7 @@ The hand-on example code for RTC POW009-Lab2 is used to measure plant bode plot 
 ## Version Description
 - v2.0 (Nov 10, 2022)
   - Add Mindi/Plant modeling example for reference
+  
     ![image](https://user-images.githubusercontent.com/61537309/200979664-ae62631e-80bd-4bae-8a84-3f4db3b424a8.png)
   - Test P-term control function with adjusting "Nominal Efficiency" on PowerSmart
   - Add test result to Bode-100 file
