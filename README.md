@@ -21,9 +21,9 @@ The hand-on example code for RTC POW009-Lab2 is used to measure plant bode plot 
 
 ## Version Description
 - v2.0 (Nov 10, 2022)
- - Add Mindi/Plant modeling example for reference
- - Test P-term control function with adjusting "Nominal Efficiency" on PowerSmart
- - Add test result to Bode-100 file
+  - Add Mindi/Plant modeling example for reference
+  - Test P-term control function with adjusting "Nominal Efficiency" on PowerSmart
+  - Add test result to Bode-100 file
 - v1.0 (Nov 2, 2022)
 
 - - -
