@@ -3,7 +3,7 @@
 
 - - -
 ## Hardward EVM Boards Used:
-## DSPIC33CK CURIOSITY DEVELOPMENT BOARD
+## dsPIC33CK CURIOSITY DEVELOPMENT BOARD
 Part Number: DM330030
 
 ![image](https://www.microchip.com/content/dam/mchp/mrt-dam/devtools/2956-ds-33ck256mp508-curiosity-development-board.jpg) 
