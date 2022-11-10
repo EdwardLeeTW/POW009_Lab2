@@ -22,6 +22,7 @@ The hand-on example code for RTC POW009-Lab2 is used to measure plant bode plot 
 ## Version Description
 - v2.0 (Nov 10, 2022)
   - Add Mindi/Plant modeling example for reference
+    ![image](https://user-images.githubusercontent.com/61537309/200979664-ae62631e-80bd-4bae-8a84-3f4db3b424a8.png)
   - Test P-term control function with adjusting "Nominal Efficiency" on PowerSmart
   - Add test result to Bode-100 file
 - v1.0 (Nov 2, 2022)
@@ -53,7 +54,7 @@ Alternative Controller Plug-In Module:
 
 ## Hardware Used
 
-- DSPIC33CK CURIOSITY DEVELOPMENT BOARD, Part-No. [DM330030](https://www.microchip.com/en-us/development-tool/DM330030)
+- dsPIC33CK CURIOSITY DEVELOPMENT BOARD, Part-No. [DM330030](https://www.microchip.com/en-us/development-tool/DM330030)
 - Microchip APP-POWERRTC1 EVM, Part-No. [APP-POWERRTC1](https://shopee.tw/%E3%80%90ICBOX%E3%80%91Microchip-APP-POWERRTC1-%E5%AF%A6%E9%A9%97%E6%9D%BF-0300801566001-i.219280202.7044587367)
 
 ## Supported Target Devices
