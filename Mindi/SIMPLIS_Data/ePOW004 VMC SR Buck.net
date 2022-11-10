@@ -1,0 +1,92 @@
+* \\Mac\GitHub\POW009_Lab2\Mindi\ePOW004 VMC SR Buck.sxcmp
+*#SIMETRIX
+.node_map 5V 48
+.node_map VCOMP 43
+.node_map L_IN 46
+.node_map PWMH 45
+.node_map PWML 47
+.node_map P_OUT 44
+.ac DEC 100 100 700k
+.print
++ ALL
+.options
++ PSP_START=470u
++ PSP_NPT=10001
++ POP_ITRMAX=20
++ POP_OUTPUT_CYCLES=5
++ SNAPSHOT_INTVL=0
++ NEW_ANALYSIS
++ MIN_AVG_TOPOLOGY_DUR=1a
++ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128
+.pop
++ TRIG_GATE={TRIG_GATE}
++ TRIG_COND=0_TO_1
++ MAX_PERIOD=5u
++ CONVERGENCE=10f
++ CYCLES_BEFORE_LAUNCH=5
++ TD_RUN_AFTER_POP_FAILS=-1
+*.tran 0 5m
+
+
+C1 33 0 220u IC=0
+C2 40 36 27.96n
+C3 36 43 5.07n
+C4 36 35 69.5n
+X$D1 0 31 DIODE_SPICE_V2 vars: IDmax=10 VDmax=50 TEMP=50 XDm0=-45 YDm0=-71.4712p XDm1=350.418m YDm1=50u XDm2=370.18m YDm2=750m XDm3=390.706m YDm3=2.5 XDm4=410.008m YDm4=5 XDm5=480.309m YDm5=10 NUMSEG=3 IC=0
+V$IPROBE3 31 32 0.0
+.PRINT I(V$IPROBE3)
+.GRAPH IPROBE3#P axisType="grid" axisName="IL" persistence=-1 curveLabel="IL" analysis="tran|pop" order="4" xLog="auto" yLog="lin"  nowarn=true GUID="d23385f7-e65e-44a2-abbd-aeec9a6bc5c6" disabled=false userid=IPROBE3. MeasureSpec="Peak\sTo\sPeak|0|0|0|0!Maximum|0|0|0|0!Minimum|0|0|0|0"
+.post_process probe_measure IPROBE3. Peak\sTo\sPeak|0|0|0|0!Maximum|0|0|0|0!Minimum|0|0|0|0
+V$IPROBE4 34 0 0.0
+.PRINT I(V$IPROBE4)
+.GRAPH IPROBE4#P axisType="grid" axisName="Io" persistence=-1 curveLabel="Io" analysis="tran|pop" order="5" xLog="auto" yLog="lin"  nowarn=true GUID="075ff14e-6f07-484e-8aa2-ec08556071c1" disabled=false userid=IPROBE4. MeasureSpec="Mean|0|0|0|0"
+.post_process probe_measure IPROBE4. Mean|0|0|0|0
+V$IPROBE6 29 30 0.0
+.PRINT I(V$IPROBE6)
+.GRAPH IPROBE6#P axisType="grid" axisName="Iin" persistence=-1 curveLabel="Iin" analysis="tran|pop" order="3" xLog="auto" yLog="lin"  nowarn=true GUID="d2dfb350-1627-4e90-8e87-7e20debe6777" disabled=false 
+L1 32 44 33u
+.PRINT V(#P_OUT)
+.PRINT V(#VCOMP)
+.GRAPH "db(:#P_OUT/:#VCOMP)" Curvelabel="Gain_Plant" nowarn=true yunit="dB" complete=True analysis="ac" ylog=lin xlog=auto  ydelta=20 persistence=-1 colourname=Probe1_bode_color   axistype=grid axisname=bodemag order=0    
+.GRAPH "ph(:#P_OUT/:#VCOMP)" Curvelabel="Phase_Plant" nowarn=true yunit="degrees" complete=True analysis="ac" ylog=lin xlog=auto ymax=200 ymin=-200 ydelta=45 persistence=-1 colourname=Probe1_bode_color    axisname=bodephase order=1    
+.PRINT V(#PWMH)
+.GRAPH :#PWMH axisType="grid" axisName="PWMH" persistence=-1 curveLabel="PWMH" analysis="tran|pop" xLog="auto" yLog="auto"  nowarn=true GUID="9a85f703-7823-4676-928c-bf0ed3155707" disabled=false PROBEREF=Probe2 userid=Probe2. MeasureSpec="Mean|0|0|0|0!Peak\sTo\sPeak|0|0|0|0"
+.post_process probe_measure Probe2. Mean|0|0|0|0!Peak\sTo\sPeak|0|0|0|0 
+.PRINT V(31)
+.GRAPH :31 axisType="grid" axisName="Vd" persistence=-1 curveLabel="VN" analysis="tran|pop" order="7" xLog="auto" yLog="auto"  nowarn=true GUID="75c95247-2dac-4049-939f-9781b2cf158c" disabled=false PROBEREF=Probe3 userid=Probe3. MeasureSpec="Maximum|0|0|0|0!Minimum|0|0|0|0"
+.post_process probe_measure Probe3. Maximum|0|0|0|0!Minimum|0|0|0|0 
+.PRINT V(#P_OUT)
+.GRAPH :#P_OUT axisType="grid" axisName="Vo" persistence=-1 curveLabel="Vo" analysis="tran|pop" order="8" xLog="auto" yLog="auto"  nowarn=true GUID="98f0466a-8dd4-4deb-aeca-8668c599119b" disabled=false PROBEREF=Probe4 userid=Probe4. MeasureSpec="Mean|0|0|0|0!Peak\sTo\sPeak|0|0|0|0"
+.post_process probe_measure Probe4. Mean|0|0|0|0!Peak\sTo\sPeak|0|0|0|0 
+.PRINT V(#PWML)
+.GRAPH :#PWML axisType="grid" axisName="PWML" persistence=-1 curveLabel="PWML" analysis="tran|pop" xLog="auto" yLog="auto"  nowarn=true GUID="219c1455-161b-4d38-904f-c690ba33b192" disabled=false PROBEREF=Probe5 userid=Probe5. MeasureSpec="Mean|0|0|0|0!Peak\sTo\sPeak|0|0|0|0"
+.post_process probe_measure Probe5. Mean|0|0|0|0!Peak\sTo\sPeak|0|0|0|0 
+.PRINT V(#VCOMP)
+.PRINT V(#L_IN)
+.GRAPH "db(:#VCOMP/:#L_IN)" Curvelabel="Gain" nowarn=true yunit="dB" complete=True analysis="ac" ylog=lin xlog=auto  ydelta=20 persistence=-1 colourname=Probe6_bode_color   axistype=grid axisname=bodemag order=0    
+.GRAPH "ph(:#VCOMP/:#L_IN)" Curvelabel="Phase" nowarn=true yunit="degrees" complete=True analysis="ac" ylog=lin xlog=auto ymax=200 ymin=-200 ydelta=45 persistence=-1 colourname=Probe6_bode_color    axisname=bodephase order=1    
+.PRINT V(#P_OUT)
+.PRINT V(#L_IN)
+.GRAPH "db(:#P_OUT/:#L_IN)" Curvelabel="Gain" nowarn=true yunit="dB" complete=True analysis="ac" ylog=lin xlog=auto  ydelta=20 persistence=-1 colourname=Probe8_bode_color   axistype=grid axisname=bodemag order=0    userid=Probe8$GAIN. MeasureSpec="Gain\sCrossover\sFrequency\s(dB\sPlot)|0|0|0|0!Gain\sMargin\s(dB\sPlot)|0|0|0|0"
+.post_process probe_measure Probe8$GAIN. Gain\sCrossover\sFrequency\s(dB\sPlot)|0|0|0|0!Gain\sMargin\s(dB\sPlot)|0|0|0|0
+.GRAPH "ph(:#P_OUT/:#L_IN)" Curvelabel="Phase" nowarn=true yunit="degrees" complete=True analysis="ac" ylog=lin xlog=auto ymax=200 ymin=-200 ydelta=45 persistence=-1 colourname=Probe8_bode_color    axisname=bodephase order=1    userid=Probe8$PHASE. MeasureSpec="Phase\sMargin\s(Phase\sPlot)|0|0|0|0"
+.post_process probe_measure Probe8$PHASE. Phase\sMargin\s(Phase\sPlot)|0|0|0|0
+R1 46 36 6.8k
+R2 44 34 5
+R3 44 33 120m
+R4 36 0 1K
+R5 46 40 946.19
+R6 35 43 1.22598k
+X$S1 30 31 45 0 SIMPLIS_VC_SWITCH vars: ROFF=1Meg RON=6.6m THRESHOLD=2 HYSTWD=100m IC='OPEN' LOGIC='POS'
+X$S2 31 0 47 0 SIMPLIS_VC_SWITCH vars: ROFF=1Meg RON=6.6m THRESHOLD=2 HYSTWD=100m IC='OPEN' LOGIC='POS'
+X$U1 37 41 0 43 39 SIMPLIS_DIGI1_COMP_Y vars: IC=0 RIN=10Meg ROUT=10 HYSTWD=2m VOL=0 VOH=5 DELAY=2p
+X$U2 47 0 41 SIMPLIS_DIGI1_D_ASYMMETRIC_DELAY_Y vars: IC=0 RIN=10Meg ROUT=10 TH=2.5 HYSTWD=1 VOL=0 VOH=5 RISE_DELAY=150n FALL_DELAY=1f GNDREF='Y'
+X$U3 45 0 37 SIMPLIS_DIGI1_D_ASYMMETRIC_DELAY_Y vars: IC=0 RIN=10Meg ROUT=10 TH=2.5 HYSTWD=1 VOL=0 VOH=5 RISE_DELAY=150n FALL_DELAY=1f GNDREF='Y'
+V1 39 0 SAW V1=0 V2=1 FREQ=250000 DELAY=0 OFF_UNTIL_DELAY=NO
+V2 44 46 AC 1m 0
+V3 29 0 12
+V4 48 0 5
+V5 42 0 640m
+X1 39 38 PERIODIC_OP vars: VREF=500m VOL=0 VOH=1 HYSTWD=2m DIVIDE_BY_2=0 IC=0 DELAY=0 TRIG_COND='0_TO_1'
+X2 42 36 48 0 43 PARAM_OPAMP vars: LEVEL=2 VOS=0 IB=50p IBOS=1n A0=1Meg GBW=5Meg SR_POS=1Meg SR_NEG=1Meg CMRR=100k PSRR=100k RIN=10Meg IO_SRC_MAX=5m IO_SNK_MAX=5m ROUT=100 RO_AC=50 IQ=1m VDIFF_POS=10m VDIFF_NEG=10m USE_BACK_ANNO=1 DEF_IC_R_FF2=1 DEF_IC_R_FF3=1 BA_IC_R_FF2=2 BA_IC_R_FF3=2
+.end

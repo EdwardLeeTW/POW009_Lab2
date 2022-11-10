@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/traps.c mcc_generated_files/pwm.c mcc_generated_files/tmr1.c mcc_generated_files/pin_manager.c mcc_generated_files/interrupt_manager.c mcc_generated_files/system.c mcc_generated_files/reset.c mcc_generated_files/clock.c mcc_generated_files/mcc.c mcc_generated_files/adc1.c sources/os/os_scheduler_100us.c sources/os/os_scheduler_1ms.c sources/os/os_sys_time.c sources/os/os.c sources/os/os_timer.c main.c main_tasks.c "sources/driver/power controller/VCOMP.c" "sources/driver/power controller/VCOMP_asm.s" "sources/driver/power controller/SyncBuckControl.c"
+SOURCEFILES_QUOTED_IF_SPACED="sources/driver/power controller/VCOMP.c" "sources/driver/power controller/VCOMP_asm.s" "sources/driver/power controller/SyncBuckControl.c" mcc_generated_files/traps.c mcc_generated_files/pwm.c mcc_generated_files/tmr1.c mcc_generated_files/pin_manager.c mcc_generated_files/interrupt_manager.c mcc_generated_files/system.c mcc_generated_files/reset.c mcc_generated_files/clock.c mcc_generated_files/mcc.c mcc_generated_files/adc1.c sources/os/os_scheduler_100us.c sources/os/os_scheduler_1ms.c sources/os/os_sys_time.c sources/os/os.c sources/os/os_timer.c main.c main_tasks.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pwm.o ${OBJECTDIR}/mcc_generated_files/tmr1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/reset.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/adc1.o ${OBJECTDIR}/sources/os/os_scheduler_100us.o ${OBJECTDIR}/sources/os/os_scheduler_1ms.o ${OBJECTDIR}/sources/os/os_sys_time.o ${OBJECTDIR}/sources/os/os.o ${OBJECTDIR}/sources/os/os_timer.o ${OBJECTDIR}/main.o ${OBJECTDIR}/main_tasks.o "${OBJECTDIR}/sources/driver/power controller/VCOMP.o" "${OBJECTDIR}/sources/driver/power controller/VCOMP_asm.o" "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o"
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/traps.o.d ${OBJECTDIR}/mcc_generated_files/pwm.o.d ${OBJECTDIR}/mcc_generated_files/tmr1.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/system.o.d ${OBJECTDIR}/mcc_generated_files/reset.o.d ${OBJECTDIR}/mcc_generated_files/clock.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/mcc_generated_files/adc1.o.d ${OBJECTDIR}/sources/os/os_scheduler_100us.o.d ${OBJECTDIR}/sources/os/os_scheduler_1ms.o.d ${OBJECTDIR}/sources/os/os_sys_time.o.d ${OBJECTDIR}/sources/os/os.o.d ${OBJECTDIR}/sources/os/os_timer.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/main_tasks.o.d "${OBJECTDIR}/sources/driver/power controller/VCOMP.o.d" "${OBJECTDIR}/sources/driver/power controller/VCOMP_asm.o.d" "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o.d"
+OBJECTFILES_QUOTED_IF_SPACED="${OBJECTDIR}/sources/driver/power controller/VCOMP.o" "${OBJECTDIR}/sources/driver/power controller/VCOMP_asm.o" "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o" ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pwm.o ${OBJECTDIR}/mcc_generated_files/tmr1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/reset.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/adc1.o ${OBJECTDIR}/sources/os/os_scheduler_100us.o ${OBJECTDIR}/sources/os/os_scheduler_1ms.o ${OBJECTDIR}/sources/os/os_sys_time.o ${OBJECTDIR}/sources/os/os.o ${OBJECTDIR}/sources/os/os_timer.o ${OBJECTDIR}/main.o ${OBJECTDIR}/main_tasks.o
+POSSIBLE_DEPFILES="${OBJECTDIR}/sources/driver/power controller/VCOMP.o.d" "${OBJECTDIR}/sources/driver/power controller/VCOMP_asm.o.d" "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o.d" ${OBJECTDIR}/mcc_generated_files/traps.o.d ${OBJECTDIR}/mcc_generated_files/pwm.o.d ${OBJECTDIR}/mcc_generated_files/tmr1.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/system.o.d ${OBJECTDIR}/mcc_generated_files/reset.o.d ${OBJECTDIR}/mcc_generated_files/clock.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/mcc_generated_files/adc1.o.d ${OBJECTDIR}/sources/os/os_scheduler_100us.o.d ${OBJECTDIR}/sources/os/os_scheduler_1ms.o.d ${OBJECTDIR}/sources/os/os_sys_time.o.d ${OBJECTDIR}/sources/os/os.o.d ${OBJECTDIR}/sources/os/os_timer.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/main_tasks.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pwm.o ${OBJECTDIR}/mcc_generated_files/tmr1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/reset.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/adc1.o ${OBJECTDIR}/sources/os/os_scheduler_100us.o ${OBJECTDIR}/sources/os/os_scheduler_1ms.o ${OBJECTDIR}/sources/os/os_sys_time.o ${OBJECTDIR}/sources/os/os.o ${OBJECTDIR}/sources/os/os_timer.o ${OBJECTDIR}/main.o ${OBJECTDIR}/main_tasks.o ${OBJECTDIR}/sources/driver/power\ controller/VCOMP.o ${OBJECTDIR}/sources/driver/power\ controller/VCOMP_asm.o ${OBJECTDIR}/sources/driver/power\ controller/SyncBuckControl.o
+OBJECTFILES=${OBJECTDIR}/sources/driver/power\ controller/VCOMP.o ${OBJECTDIR}/sources/driver/power\ controller/VCOMP_asm.o ${OBJECTDIR}/sources/driver/power\ controller/SyncBuckControl.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pwm.o ${OBJECTDIR}/mcc_generated_files/tmr1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/reset.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/adc1.o ${OBJECTDIR}/sources/os/os_scheduler_100us.o ${OBJECTDIR}/sources/os/os_scheduler_1ms.o ${OBJECTDIR}/sources/os/os_sys_time.o ${OBJECTDIR}/sources/os/os.o ${OBJECTDIR}/sources/os/os_timer.o ${OBJECTDIR}/main.o ${OBJECTDIR}/main_tasks.o
 
 # Source Files
-SOURCEFILES=mcc_generated_files/traps.c mcc_generated_files/pwm.c mcc_generated_files/tmr1.c mcc_generated_files/pin_manager.c mcc_generated_files/interrupt_manager.c mcc_generated_files/system.c mcc_generated_files/reset.c mcc_generated_files/clock.c mcc_generated_files/mcc.c mcc_generated_files/adc1.c sources/os/os_scheduler_100us.c sources/os/os_scheduler_1ms.c sources/os/os_sys_time.c sources/os/os.c sources/os/os_timer.c main.c main_tasks.c sources/driver/power controller/VCOMP.c sources/driver/power controller/VCOMP_asm.s sources/driver/power controller/SyncBuckControl.c
+SOURCEFILES=sources/driver/power controller/VCOMP.c sources/driver/power controller/VCOMP_asm.s sources/driver/power controller/SyncBuckControl.c mcc_generated_files/traps.c mcc_generated_files/pwm.c mcc_generated_files/tmr1.c mcc_generated_files/pin_manager.c mcc_generated_files/interrupt_manager.c mcc_generated_files/system.c mcc_generated_files/reset.c mcc_generated_files/clock.c mcc_generated_files/mcc.c mcc_generated_files/adc1.c sources/os/os_scheduler_100us.c sources/os/os_scheduler_1ms.c sources/os/os_sys_time.c sources/os/os.c sources/os/os_timer.c main.c main_tasks.c
 
 
 
@@ -95,6 +95,18 @@ MP_LINKER_FILE_OPTION=,--script=p33CK256MP508.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/sources/driver/power\ controller/VCOMP.o: sources/driver/power\ controller/VCOMP.c  .generated_files/flags/default/c63e05a852a0865dd5584db2375b80ae2af34d40 .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
+	@${MKDIR} "${OBJECTDIR}/sources/driver/power controller" 
+	@${RM} "${OBJECTDIR}/sources/driver/power controller/VCOMP.o".d 
+	@${RM} "${OBJECTDIR}/sources/driver/power controller/VCOMP.o" 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/VCOMP.c"  -o "${OBJECTDIR}/sources/driver/power controller/VCOMP.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/VCOMP.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
+${OBJECTDIR}/sources/driver/power\ controller/SyncBuckControl.o: sources/driver/power\ controller/SyncBuckControl.c  .generated_files/flags/default/c94f6677c297e8068db57d924fc1091245dba6fd .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
+	@${MKDIR} "${OBJECTDIR}/sources/driver/power controller" 
+	@${RM} "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o".d 
+	@${RM} "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o" 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/SyncBuckControl.c"  -o "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	
 ${OBJECTDIR}/mcc_generated_files/traps.o: mcc_generated_files/traps.c  .generated_files/flags/default/60903c94806cbe973b04af16eb6fb2232c76d24e .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/traps.o.d 
@@ -197,19 +209,19 @@ ${OBJECTDIR}/main_tasks.o: main_tasks.c  .generated_files/flags/default/91db2b15
 	@${RM} ${OBJECTDIR}/main_tasks.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  main_tasks.c  -o ${OBJECTDIR}/main_tasks.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main_tasks.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/sources/driver/power\ controller/VCOMP.o: sources/driver/power\ controller/VCOMP.c  .generated_files/flags/default/c63e05a852a0865dd5584db2375b80ae2af34d40 .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
+else
+${OBJECTDIR}/sources/driver/power\ controller/VCOMP.o: sources/driver/power\ controller/VCOMP.c  .generated_files/flags/default/9baafa574ed22637a32d1256355a04349d242411 .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
 	@${MKDIR} "${OBJECTDIR}/sources/driver/power controller" 
 	@${RM} "${OBJECTDIR}/sources/driver/power controller/VCOMP.o".d 
 	@${RM} "${OBJECTDIR}/sources/driver/power controller/VCOMP.o" 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/VCOMP.c"  -o "${OBJECTDIR}/sources/driver/power controller/VCOMP.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/VCOMP.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/VCOMP.c"  -o "${OBJECTDIR}/sources/driver/power controller/VCOMP.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/VCOMP.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/sources/driver/power\ controller/SyncBuckControl.o: sources/driver/power\ controller/SyncBuckControl.c  .generated_files/flags/default/c94f6677c297e8068db57d924fc1091245dba6fd .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
+${OBJECTDIR}/sources/driver/power\ controller/SyncBuckControl.o: sources/driver/power\ controller/SyncBuckControl.c  .generated_files/flags/default/92095b0f0d8830ca02701a0dd7c61a5c6c0f042c .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
 	@${MKDIR} "${OBJECTDIR}/sources/driver/power controller" 
 	@${RM} "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o".d 
 	@${RM} "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o" 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/SyncBuckControl.c"  -o "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/SyncBuckControl.c"  -o "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-else
 ${OBJECTDIR}/mcc_generated_files/traps.o: mcc_generated_files/traps.c  .generated_files/flags/default/fee76292a6b8375ff1e9fee0dad5303ca70e22a0 .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/traps.o.d 
@@ -311,18 +323,6 @@ ${OBJECTDIR}/main_tasks.o: main_tasks.c  .generated_files/flags/default/e858e17f
 	@${RM} ${OBJECTDIR}/main_tasks.o.d 
 	@${RM} ${OBJECTDIR}/main_tasks.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  main_tasks.c  -o ${OBJECTDIR}/main_tasks.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main_tasks.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
-	
-${OBJECTDIR}/sources/driver/power\ controller/VCOMP.o: sources/driver/power\ controller/VCOMP.c  .generated_files/flags/default/9baafa574ed22637a32d1256355a04349d242411 .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
-	@${MKDIR} "${OBJECTDIR}/sources/driver/power controller" 
-	@${RM} "${OBJECTDIR}/sources/driver/power controller/VCOMP.o".d 
-	@${RM} "${OBJECTDIR}/sources/driver/power controller/VCOMP.o" 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/VCOMP.c"  -o "${OBJECTDIR}/sources/driver/power controller/VCOMP.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/VCOMP.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
-	
-${OBJECTDIR}/sources/driver/power\ controller/SyncBuckControl.o: sources/driver/power\ controller/SyncBuckControl.c  .generated_files/flags/default/92095b0f0d8830ca02701a0dd7c61a5c6c0f042c .generated_files/flags/default/9a5c5798510c28560f2b9b166d4585072c5e14ef
-	@${MKDIR} "${OBJECTDIR}/sources/driver/power controller" 
-	@${RM} "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o".d 
-	@${RM} "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o" 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  "sources/driver/power controller/SyncBuckControl.c"  -o "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o"  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/sources/driver/power controller/SyncBuckControl.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -I"sources/driver/power controller" -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 endif
 
