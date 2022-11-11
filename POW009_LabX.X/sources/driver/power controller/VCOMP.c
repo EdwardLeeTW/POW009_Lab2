@@ -16,7 +16,7 @@
  * CGS Date:            01/06/2022
  * *********************************************************************************
  * User:                edwardlee
- * Date/Time:           11/11/2022 16:09:25
+ * Date/Time:           11/11/2022 21:41:57
  * ********************************************************************************/
 
 #include "VCOMP.h"
@@ -82,8 +82,8 @@ volatile int16_t VCOMP_post_shift_B = 0;          // Bit-shift value B used to p
 volatile fractional VCOMP_post_scaler = 0x0000;   // Q15 fractional factor used to perform control output value backward normalization
 
 // P-Term Coefficient for Plant Measurements
-volatile int16_t VCOMP_pterm_factor = 0x48DB;     // Q15 fractional of the P-Term factor
-volatile int16_t VCOMP_pterm_scaler = 0xFFFE;     // Bit-shift scaler of the P-Term factor
+volatile int16_t VCOMP_pterm_factor = 0x709C;     // Q15 fractional of the P-Term factor
+volatile int16_t VCOMP_pterm_scaler = 0xFFFF;     // Bit-shift scaler of the P-Term factor
 
 
 // User-defined NPNZ16b_s controller data object
