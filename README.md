@@ -20,7 +20,8 @@ The hand-on example code for RTC POW009-Lab2 is used to measure plant bode plot 
 - Kp (P-term) contorl using PowerSmart-DCLD
 
 ## Version Description
-- v2.0 (Nov 10, 2022)
+- v1.0 (Nov 13, 2022)
+  - Implement Kp (P-term) control using PowerSmart-DCLD
   - Add Mindi/Plant modeling example for reference
   
     ![image](https://user-images.githubusercontent.com/61537309/200979664-ae62631e-80bd-4bae-8a84-3f4db3b424a8.png)
@@ -28,7 +29,6 @@ The hand-on example code for RTC POW009-Lab2 is used to measure plant bode plot 
   
     ![MicrosoftTeams-image](https://user-images.githubusercontent.com/61537309/200979998-f56c543f-3cbf-4592-a875-0fb102785eae.png)
   - Add test result to Bode-100 file
-- v1.0 (Nov 2, 2022)
 
 - - -
 
